@@ -5,14 +5,21 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 
-
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
+
+background(255,255,255,0);
  
-  background(255,255,255,0);
   
+    //background
+    fill(72,111,56)
+    rect(0,300,600,200);
 
-
+    //car
+    strokeWeight(0)
+    fill(194,24,7)
+    rect(200,200,100,100);
+    rect(150,240,200,100);
 
 
 

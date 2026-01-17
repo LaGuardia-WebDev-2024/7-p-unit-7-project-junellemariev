@@ -4,23 +4,66 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
+var treex = 150
+var treey = 500
+var carx = 300
+var skyShade = 
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
 
 background(255,255,255,0);
  
+    //sky
+    fill(173, 216, 230); //light blue
+    rect (400,400,400,400);
   
-    //background
+    //grass
+    strokeWeight(0)
+    stroke(0,0,0,0)
     fill(72,111,56)
     rect(0,300,600,200);
 
-    //car
-    strokeWeight(0)
-    fill(194,24,7)
-    rect(200,200,100,100);
-    rect(150,240,200,100);
+    //tree 1
+    strokeWeight(20);
+    stroke(101, 67, 33);
+    line(treex,300,treex,120); //wood
+    strokeWeight(1);
+    stroke(0,0,0,0)
+    fill(37, 65, 23);
+    triangle(treex - 80,270,treex,80,treex + 80,270); //leaves
 
+    //tree 2
+    strokeWeight(20);
+    stroke(101, 67, 33);
+    line(treey,300,treey,120); //wood
+    strokeWeight(1);
+    stroke(0,0,0,0)
+    fill(37, 65, 23);
+    triangle(treey - 80,270,treey,80,treey + 80,270); //leaves
+
+    //car
+    strokeWeight(0);
+    stroke(0,0,0,0);
+    fill(194,80,7);
+    rect(250,220,140,100);
+    rect(200,260,200,60);
+        //wheels
+        fill(0,0,0)
+        ellipse(carx - 60,320,50,50);
+        ellipse(carx + 60,320,50,50);
+
+    treex = treex + 10
+    treey = treey + 10
+
+    if(treex > 700) {
+        treex = -10
+    }
+
+    if(treey > 700) {
+        treey = -10
+    }
 
 
   //Show x y values when mousepressed

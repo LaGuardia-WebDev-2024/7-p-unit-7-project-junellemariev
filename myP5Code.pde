@@ -54,15 +54,15 @@ background(255,255,255,0);
         ellipse(carx - 60,320,50,50);
         ellipse(carx + 60,320,50,50);
 
-    treex = treex + 10
-    treey = treey + 10
+    treex = treex + 7
+    treey = treey + 7
 
     if(treex > 700) {
-        treex = -10
+        treex = -30
     }
 
     if(treey > 700) {
-        treey = -10
+        treey = -30
     }
 
 

@@ -7,18 +7,13 @@ void setup() {
 var treex = 150
 var treey = 500
 var carx = 300
-var skyShade = 
 
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
-
-background(255,255,255,0);
  
-    //sky
-    fill(173, 216, 230); //light blue
-    rect (400,400,400,400);
-  
+ background(170,210, 250, 0);
+
     //grass
     strokeWeight(0)
     stroke(0,0,0,0)
